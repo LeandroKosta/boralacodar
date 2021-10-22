@@ -16,10 +16,6 @@ const Conteudos = database.define("conteudos", {
     type: Sequelize.STRING,
     allowNull: false,
   },
-  descritivo: {
-    type: Sequelize.STRING,
-    allowNull: false,
-  },  
 },
 {
   freezeTableName: true,
