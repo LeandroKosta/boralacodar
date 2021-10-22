@@ -27,7 +27,7 @@ app.get("/frontend", async (req, res) => {
 // C (Create) do meu CRUD - Aqui eu vou criar uma entrada nova no meu banco
 app.post("/cadastrar", async (req, res) => {
 
-  const { tema, linkconteudo, descritivo } = req.body;
+  const { tema, linkconteudo } = req.body;
 
   message = `O Conteúdo ${tema} foi adicionado com sucesso!`;
 
@@ -48,8 +48,7 @@ else if (!linkconteudo) {
       const conteudo = await Conteudos.create({
         tema,
         linkconteudo,
-        descritivo,
-      });
+    });
 
      
       res.redirect("admin");
@@ -109,10 +108,9 @@ app.get("/editar/:id", async (req, res) => {
 app.post("/editar/:id", async (req, res) => {
   const conteudo = await Conteudos.findByPk(req.params.id);
 
-  const { tema, descritivo, linkconteudo } = req.body;
+  const { tema, linkconteudo } = req.body;
 
-  conteudo.tema = tema;
-  conteudo.descritivo = descritivo;
+  conteudo.tema = tema;  
   conteudo.linkconteudo = linkconteudo;
 
   const conteudoEditado = await conteudo.save();
