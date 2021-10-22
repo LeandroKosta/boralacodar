@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+  
+html, body {
+  scroll-behavior: smooth;
+  background-color: #FFF0E5;    
+}
+ 
+nav {
+  background-color: #ffffff;   
+  text-align: center;     
+  border: 1px solid rgb(226, 226, 226);
+}  
+ 
+nav ul {    
+  list-style: none;
+  display: flex;
+  justify-content: center;    
+}
+  
+nav ul li {
+  padding: 1rem;
+}
+  
+nav ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: 0.5s;
+}
+  
+nav ul li a:hover {
+  color: rgb(177, 9, 154);
+}  
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FFF0E5;
+  padding: 1rem 1rem 0px 1rem;
+  color: rgb(146, 0, 0);
+}
+
+/* Config Card Conteúdo */
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+
+section ul h2 {
+  color: black;
+  text-align: center;
+  padding: 5px 0px 10px 0px;
+}
+
+/* Config Card Bottom */
+a.card_bottom {
+  width: 320px;
+  height: 40px;
+  padding: 2rem; 
+  margin: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.5s;
+  background-color:rgb(146, 0, 139);  
+  text-decoration: none; 
+} 
+
+a.card_bottom:hover {
+  transform: scale(1.1);
+}
+
+section a h2 {
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;  
+}
+
+/* Config Rodapé */
+footer {      
+  height: 30px;
+  padding: 1rem;  
+  background-color: #FFF0E5;
+  text-align: center;  
+}
+
+  @media (max-width: 320px){
+    
+  }
+  
+  @media (max-width: 768px){
+      
+  }

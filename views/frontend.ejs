@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style_frontend.css">
+    <title>Bora Lá #Codar</title>
+</head>
+
+<body>
+    <aside>
+        <h3>Módulo 1 - Introdutório</h3>
+        <% conteudos.forEach(item => { %>            
+            <a href="detalhes/<%= item.id %>">
+            <p><%= item.tema %></p>                           
+            </a>
+        <% }) %>  
+        
+        <p>2. Como Funciona a Internet?</p>
+        <p>3. O que é HTTP?</p>
+        <p>4. Como funcionam os DNS?</p>
+        <p>5. O que é Dóminio?</p>
+        <p>6. O que é Hospedagem?</p>
+        <p>7. O que é Lógica de Programação?</p>
+    </aside>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Trilha do Frontend</h1>
+    </header>
+
+    <article>
+        <h3>O que é um Frontend e Para que serve?</h3>
+        <p>O desenvolvedor front-end é responsável pela experiência do usuário dentro de uma aplicação web, é ele quem vai desenhar e desenvolver as páginas com as quais, posteriormente, o usuário irá interagir.</p> 
+
+        <p>O front-end também inclui elementos que determinam a identidade visual de um site ou aplicativo, por isso, além do conhecimento de linguagens de programação específicas, um desenvolvedor dessa área só tem a ganhar se tiver noções de design, arquitetura da informação e UX.</p>        
+    </article>
+
+    <section>       
+        <a class="card" href=""> <h2>1. Você Sabe o que é Internet? </h2> </a> 
+    </section>
+    
+    <footer>     
+            <h4>© 2021 Desenvolvedor Full Stack - Leandro Kosta ©</h4>       
+    </footer>
+</body>
+
+<script src="/js/script.js"></script>
+
+</html>

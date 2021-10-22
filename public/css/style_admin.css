@@ -1,0 +1,162 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+  
+html, body {
+  scroll-behavior: smooth;
+  background-color: #FFF0E5;    
+}
+ 
+nav {
+  background-color: #ffffff;   
+  text-align: center;     
+}  
+ 
+nav ul {    
+  list-style: none;
+  display: flex;
+  justify-content: center;    
+}
+  
+nav ul li {
+  padding: 1rem;
+}
+  
+nav ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: 0.5s;
+}
+  
+nav ul li a:hover {
+  color: rgb(177, 9, 154);
+}  
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  
+  background-color: #FFF0E5;
+  padding: 1rem 3rem 3rem 3rem;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  margin: auto;
+}
+
+/* Config de Msg de Confirm*/
+section#message {
+  padding: 1.5rem;
+  background-color: rgb(255, 217, 0);
+  color: #000000;
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+span#close {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: .3s;
+}
+
+span#close:hover{
+  color: rgba(255, 94, 0, 0.753);
+  transform: scale(1.5);
+}
+
+section#cadastro {
+  font-size: 35px;
+  display: flex;
+}
+
+#txt {  
+  background-color:transparent;
+  font-size:30px;
+  border: 1px solid black;  
+  height:35px;
+  width:650px;
+  float: right;
+}
+
+#divBusca img {  
+  float:right;
+  margin-top: 4px;
+  margin-right: 2px;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  cursor: pointer;
+}
+
+#divbusca:focus, input:focus{
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+section {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}   
+
+a.card {
+  width: 320px;
+  padding: 2rem; 
+  margin: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.5s;
+  background-color:rgb(146, 0, 139);  
+  text-decoration: none; 
+} 
+
+a.card:hover {
+  transform: scale(1.1);
+}
+
+section a h2 {
+  color: white;
+  padding: 5px;
+  
+}
+
+section a p {
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+footer {      
+  height: 30px;
+  padding: 1rem;
+  margin-top: 10px;
+  background-color: #FFF0E5;
+  text-align: center;
+  padding-top: 27px;
+}
+
+  @media (max-width: 320px){
+    
+  }
+  
+  @media (max-width: 768px){
+      
+  }
